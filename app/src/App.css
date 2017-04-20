@@ -1,0 +1,407 @@
+body {
+    margin: 0;
+    padding:0;
+    display: block;
+    background: #222;
+    color: #dddddd;
+}
+.App {
+    background-color: #222;
+    text-align: center;
+    height: 100vh;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+    font-size: 4em;
+    padding: 20px;
+    padding-left: 50vw;
+    color: rgba(192,192,192,0.4);
+}
+.App-block {
+    color: white;
+    background-color: #222;
+    box-sizing: border-box;
+    /*border: red 2px solid;*/
+    width: 50vw;
+    height: 100vh;
+    float: left;
+    position: fixed;
+    text-align: left;
+}
+.App-block li{
+    list-style: none;
+}
+.App-block ul{
+    padding-left: 1em;
+}
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.example-enter {
+    opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+    opacity: 1;
+    transition: opacity 5s ease-in;
+}
+
+.example-leave {
+    opacity: 1;
+}
+
+.example-leave.example-leave-active {
+    opacity: 0.01;
+    transition: opacity 5s ease-out;
+}
+
+.example-appear {
+    opacity: 0.01;
+}
+
+.example-appear.example-appear-active {
+    opacity: 1;
+    transition: opacity 5s ease-in;
+}
+
+ul {
+     margin:0;
+     padding:0;
+ }
+
+p {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+/*
+ Theme Name: Twenty Seventeen Child Theme
+ Theme URI: https://gymnoray.com
+ Author: Adolfo Onrubia
+ Author URI: https://adolfo.onrubia.es
+ Template: twentyseventeen
+ Description: Child theme for Twenty Seventeen.
+ Version: 0.1
+ License: GNU General Public License v2 or later
+ License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:
+ Text Domain: twentyseventeen-child
+ */
+ 
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+li.spinbike:hover, li.step-tono:hover, li.salsa-inicio:hover,  li.l-training:hover, li.boot-camp:hover, li.cardio-fitness:hover, li.coreográfico:hover, li.ladies:hover,li.spinbike:hover, li.salsa-inicio:hover,li.sevillanas:hover, li.flamenco:hover, li.box-noray:hover,li.bachata-avanzado:hover, li.salsa-medio:hover,li.yoga:hover, li.pilates:hover, li.fitball:hover, li.salsa-infantil:hover, li.bachata:hover, li.baile-moderno:hover, li.trx:hover,li.body-concept:hover, li.gap:hover, li.bachata-inicio:hover, li.step:hover, li.zumba:hover, li.bachata-medio:hover, li.karate-ninos-1:hover,li.karate-ninos-2:hover,li.karate-adultos:hover,li.ninjutsu:hover {
+	background: #fff;	
+	border-top-right-radius: 5em;
+	border-top-left-radius: 5em;
+	border-bottom-right-radius: 5em;
+	border-bottom-left-radius: 5em;
+	box-shadow: 300px 100spx 4px 2px #ddd inset;
+	padding:.5em 0 .5em 1.5em;
+    }
+	
+	
+    li.spinbike, li.step-tono, li.salsa-inicio,  li.l-training, li.boot-camp, li.cardio-fitness, li.coreográfico, li.ladies,li.spinbike, li.salsa-inicio,li.sevillanas, li.flamenco, li.box-noray,li.bachata-avanzado, li.salsa-medio,li.yoga, li.pilates, li.fitball, li.salsa-infantil, li.bachata, li.baile-moderno, li.trx,li.body-concept, li.gap, li.bachata-inicio, li.step, li.zumba, li.bachata-medio, li.karate-ninos-1,li.karate-ninos-2,li.karate-adultos,li.ninjutsu {
+        padding: .5em 1.5em .5em .5em ;
+        margin-bottom: .5em;
+        line-height: .9em;
+        transition: all .5s;
+        text-shadow: 1px 1px #333;
+    }
+    ul.clases-hoy, ul.clases-manana, ul.lista-clase {
+        list-style: none;
+        margin:0;
+    }
+
+	body.page-template-default #primary .entry-header .entry-title {
+		font-size: 32px;
+	}
+	img.logonoray {
+		display:none;
+	}
+	ul#top-menu.menu{
+		text-align:center;
+		padding:0;
+	}
+	ul.sub-menu{
+		text-align:center;
+		padding:0;
+
+	}
+	.navigation-top nav {
+		margin-left: 0;
+	}
+	button.dropdown-toggle {
+		padding-right: 15%;
+	}
+	.main-navigation ul ul {
+    padding: 0;
+	}
+    li.l-training, li.boot-camp, li.cardio-fitness, li.coreográfico, li.ladies {
+		background-color: rgba(255,0,233,.2);
+		line-height: 1em;
+		border: 2px solid #ff00e9;
+		color: #ff00e9;
+		box-shadow: 0px 0px 5px 2px #ff00e9 inset;
+	}
+	
+    li.spinbike, li.salsa-inicio{
+        background-color: rgba(255,215,0,.2);
+        line-height: 1em;
+        border: 2px solid gold;
+        color: gold;
+        box-shadow: -0px -0px 5px 2px gold inset;
+    }
+    li.sevillanas, li.flamenco, li.box-noray, li.step-tono{
+	background-color: rgba(255,215,0,.2);
+	border: 2px solid orange;
+	color: orange;
+	box-shadow: -0px -0px 5px 2px orange inset;
+    }
+    li.bachata-avanzado, li.salsa-medio {
+        background-color: rgba(250,128,114,.2);
+        border: 2px solid salmon;
+        color: salmon;
+        box-shadow: -0px -0px 5px 2px salmon inset;
+    }
+
+    li.yoga, li.pilates, li.fitball, li.salsa-infantil, li.bachata, li.baile-moderno, li.trx{
+        background-color: rgba(0,255,255,.2);
+        border: 2px solid cyan;
+        color: cyan;
+        box-shadow: -0px -0px 5px 2px cyan inset;
+    }
+
+    li.body-concept, li.gap, li.bachata-inicio {
+        background-color: rgba(127,255,0,.2);
+        border: 2px solid chartreuse;
+        color: chartreuse;
+        box-shadow: -0px -0px 5px 2px chartreuse inset;
+    }
+
+    li.step, li.zumba, li.bachata-medio {
+        background-color: rgba(255,0,0,.2);
+        border: 2px solid red;
+        color: red;
+        box-shadow: -0px -0px 5px 2px red inset;
+    }
+
+    li.karate-ninos-1{
+        background-color: rgba(129,124,195,.2);
+        border: 2px solid #B7DDE8;
+        color: #B7DDE8;
+        box-shadow: -0px -0px 5px 2px #B7DDE8 inset;
+    }
+    li.karate-ninos-2{
+        background-color: rgba(129,123,97,.2);
+        border: 2px solid #32849C;
+        color: #32849C;
+        box-shadow: -0px -0px 5px 2px #32849C inset;
+    }
+    li.karate-adultos{
+        background-color: rgba(255,99,71,.2);
+        border: 2px solid tomato;
+        color: tomato;
+        box-shadow: -0px -0px 5px 2px tomato inset;
+    }
+    li.ninjutsu{
+        background-color: rgba(129,123,97,.2);
+        border: 2px solid #00AF50;
+        color: #00AF50;
+        box-shadow: -0px -0px 5px 2px #00AF50 inset;
+    }
+
+@media screen and (min-width: 48em) {
+
+
+    .navigation-top .wrap {
+        padding: 0.75em 2em;
+	}
+
+    ul.clases-hoy, ul.clases-manana, ul.lista-clase {
+        display: flex;
+        flex-wrap: wrap;        
+    }
+	ul.clases-hoy, ul.clases-manana {
+		justify-content: space-between;
+	}
+	ul.lista-clase {
+		justify-content: center;
+	}
+
+    .page-one-column .panel-content .wrap {
+		max-width: 1280px;
+	}
+	.page.page-one-column .entry-header {
+		text-align: center;
+	}
+
+	.clase {
+		display:grid;
+        clear: both
+	}
+	TODO AQUI HAY COSAS QUE HACER
+    /*li.spinbike:hover, li.step-tono:hover, li.salsa-inicio:hover,  li.l-training:hover, li.boot-camp:hover, li.cardio-fitness:hover, li.coreográfico:hover, li.ladies:hover,li.spinbike:hover, li.salsa-inicio:hover,li.sevillanas:hover, li.flamenco:hover, li.box-noray:hover,li.bachata-avanzado:hover, li.salsa-medio:hover,li.yoga:hover, li.pilates:hover, li.fitball:hover, li.salsa-infantil:hover, li.bachata:hover, li.baile-moderno:hover, li.trx:hover,li.body-concept:hover, li.gap:hover, li.bachata-inicio:hover, li.step:hover, li.zumba:hover, li.bachata-medio:hover, li.karate-ninos-1:hover,li.karate-ninos-2:hover,li.karate-adultos:hover,li.ninjutsu:hover {
+
+    }*/	
+	li.spinbike, li.salsa-inicio,  li.l-training, li.boot-camp, li.cardio-fitness, li.coreográfico, li.ladies,li.spinbike, li.salsa-inicio,li.sevillanas, li.flamenco, li.box-noray,li.bachata-avanzado, li.salsa-medio,li.yoga, li.pilates, li.fitball, li.salsa-infantil, li.bachata, li.baile-moderno, li.trx,li.body-concept, li.gap, li.bachata-inicio, li.step-tono, li.zumba, li.bachata-medio, li.karate-ninos-1,li.karate-ninos-2,li.karate-adultos,li.ninjutsu {
+        width: calc((100% - 20px)/6);
+		margin-right: .5em;
+	}	
+	.main-navigation ul li:hover > ul, .main-navigation ul li.focus > ul ´{
+		left: 0;
+		opacity: 1;
+	}	
+	ul.clase{		
+		list-style: none;		
+	}		
+	.menu-scroll-down .icon {
+		height: 36px;
+		width: 36px;
+		position: relative;
+		top: -1.25em;
+	}
+	
+	.navigation-top .wrap {
+		max-width: 1000px;
+		padding: 0;
+	}
+	.navigation-top nav {
+		margin-left: 2em;
+	}
+	
+	
+	body.page-template-default .page-full-width #primary .entry-content {
+		width: 100%;
+		border: 2px solid #bbb;
+
+	}
+	
+	.page.page-one-column .entry-header {
+		text-align: center;
+	}
+
+	body.page-template-default .page-full-width #primary .entry-header {
+		text-align: center;
+		width: 100%;
+	}
+
+	body.page-template-default #primary .entry-header .entry-title {
+		font-size: 3rem;
+		font-size: 36px;
+		border-radius: 5px;
+		border-top: 1px solid rgba(0,0,0,0.4);
+		border-bottom: 1px solid rgba(255,255,255,0.1);
+		background-color: rgba(38,38,38,0.2)
+	}
+
+
+	.panel-content .wrap {
+		padding-bottom: 4em;
+		padding-top: 2em;
+		width:100%;
+	}
+	.site-content {
+		padding: 2em 0 0;
+	}
+	.page.page-one-column .entry-header{
+		margin-bottom: 1em;
+	}
+	label {
+		display: inline;
+	}	
+	
+	.content-home{
+		letter-spacing: 2px;
+		text-align: center;
+	}
+	img.logonoray {
+		float:left; 
+		margin-right: 2em;
+		padding-top: .6em;
+	}
+	#clase {
+		background-color: #333;
+		margin-top:3em;
+		padding: 2em;
+	}
+	.navigation-top {
+		opacity: .9;
+	}
+
+	.menu-item:hover {
+		background-color: #222;
+	}
+}
+
+
+@media screen and (max-width: 48em) {
+
+    
+
+}
+
+
+.duracion {
+	font-size: .6em;
+}
+.sala{
+	margin-top: .5em;
+}
+
+
+::selection {
+	background: transparent;
+	color: none;
+	/*background: rgba(42, 42, 42, 0.47);
+	color: #ddd;*/
+}
+
+
+.app-header{
+    text-align: center;
+}
+
+.app-header label {
+	padding: .5em;
+	line-height: 2em;
+	text-align: center;
+	margin-bottom: .5em;
+	border-radius: 5px;
+	border-top: 1px solid rgba(0,0,0,0.4);
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+	background-color: rgba(38,38,38,0.2)
+}
+
+
+
+div > h2 {
+	color: grey;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: normal;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 1px 1px #000;
+	padding-left: .5em;
+	border-radius: 5px;
+	border-top: 1px solid rgba(0,0,0,0.4);
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+	background-color: rgba(38,38,38,0.2);	
+	line-height: 2em;
+}

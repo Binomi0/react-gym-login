@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #222222;
+    color: #dddddd;
+}
+.lista-clase{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+li {
+    padding: .3em 0 0 1em;
+    margin-bottom: .5em;
+}
+.duracion {
+    font-size: .7em;
+}
+
+.sala {
+    font-weight: bold;
+}
+.pilates{
+    color: lightpink;
+    background: deeppink;
+    border-bottom: 3px solid lightpink;
+}

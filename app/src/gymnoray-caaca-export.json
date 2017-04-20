@@ -1,0 +1,19 @@
+{
+  "baile" : {
+    "clase" : "bachata",
+    "comienza" : "10:30",
+    "profesor" : "Verónica"
+  },
+  "cardio" : {
+    "clase" : "TRX",
+    "comienza" : "09:30"
+  },
+  "credentials" : {
+    "apiKey" : "AIzaSyB0MDgH4a2jCcmpnLwXQ_33NecdrvKJDdI",
+    "authDomain" : "gymnoray-caaca.firebaseapp.com",
+    "databaseURL" : "https://gymnoray-caaca.firebaseio.com",
+    "messagingSenderId" : 1078479779075,
+    "projectId" : "gymnoray-caaca",
+    "storageBucket" : "gymnoray-caaca.appspot.com"
+  }
+}
