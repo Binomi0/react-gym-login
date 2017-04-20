@@ -5,22 +5,36 @@ class AddClase extends React.Component {
     constructor() {
         super()
         this.state = {
-            clase: []
+            clase: [],
+            user: null
         }
     }
 
     componentWillMount() {
+        firebase.auth().onAuthStateChanged(user => {
+        this.setState({ user })
+        });     
+        console.log(this.state.user)    
+    }
+
+    componentDidMount() {
+       
+        if(!this.state.user) {
         firebase.database().ref('clases').on('child_added', snapshot => {
             this.setState({
                 clase: this.state.clase.concat(snapshot.val())
             })
         })
+        } else {
+            console.log('No hay usuario logueado')
+        }
     }
 
     handleAddClase (event) {
         event.preventDefault();
+        let confirmar = confirm('¿Estas seguro?');
         //const miclase= this.refs.clase.value;
-        firebase.database.enableLogging(true);
+        if (confirmar) {firebase.database.enableLogging(true);
 
         const record = {
             clase: this.refs.clase.value            
@@ -30,14 +44,25 @@ class AddClase extends React.Component {
         const newClase = dbRef.push();
         newClase.set(record);
         console.log(record, dbRef, newClase)
+    } else {
+        
+    }
+    
     }
 
-
-    render() {
-        return (
+    renderMisclases() {
+        if(this.state.user) {
+            return (
             <div>
                 <h2>Mis clases</h2>
-                <p>Estoy apuntado en {this.props.misClases}</p>
+                {
+                    this.state.clase.map(clase => (
+                        <div>
+                        <p>Estoy apuntado en <span>{clase.clase}</span></p>                           
+                        </div>
+                    ))
+                }  
+                
                 <hr/>
                 <h3>Escribe una clase</h3>
                 <form onSubmit={(event) => this.handleAddClase(event)}>
@@ -45,15 +70,16 @@ class AddClase extends React.Component {
                     <input type="submit" />
                 </form>
 
-                {
-                    this.state.clase.map(clase => (
-                        <div>
-                            <p>{clase.clase}</p>                           
-                        </div>
-                    ))
-                }                
+                              
             </div>
         )
+        } else {
+            return <p>Accede para ver la lista de clases</p>
+        }
+    }
+
+    render() {
+        return <div>{ this.renderMisclases() }</div>
     }
 }
 
