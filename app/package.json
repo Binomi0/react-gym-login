@@ -5,10 +5,8 @@
   "dependencies": {
     "ed-grid": "^2.1.1",
     "firebase": "^3.8.0",
-    "firebase-admin": "^4.2.1",
     "react": "^15.5.3",
-    "react-dom": "^15.5.3",
-    "react-transition-group": "^1.1.1",
+    "react-dom": "^15.5.3",    
     "reactfire": "^1.0.0"
   },
   "devDependencies": {

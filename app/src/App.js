@@ -6,8 +6,6 @@ import FormClases from './components/FormClases'
 import ProxClases from './components/ProxClases'
 import data2 from './data2'
 import Login from './actions/Login'
-import AddClase from './actions/addClase'
-
 
 class App extends Component {
     constructor(props) {
@@ -34,10 +32,9 @@ class App extends Component {
     componentWillMount() {
         firebase.database().ref('clases').on('child_added', snapshot => {
             this.setState({
-                clases: this.state.clase.concat(snapshot.val())
+                clase: this.state.clase.concat(snapshot.val())
             })
         })
-        console.log(this.state.clases)
     }
     
 
@@ -92,7 +89,6 @@ class App extends Component {
         return (
             <div> 
                 <Login />   
-                <AddClase/>        
                 <FormClases
                     clases={this.state.data}
                     listaOrdenada={listaOrdenada}
