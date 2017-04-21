@@ -50,8 +50,7 @@ class Login extends React.Component {
                     <div>Hola {this.state.user.displayName}!</div>                    
                     <button onClick={this.handleLogout}>Salir</button>
                     <Addclase 
-                        userIn={this.state.user} 
-                        logged={this.state.user.emailVerified}
+                        userIn={this.state.user}                         
                         uid={this.state.uid}
                         />
                     <FileUpload/>
