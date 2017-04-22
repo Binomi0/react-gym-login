@@ -1,5 +1,25 @@
 import React from 'react'
-class ListaClases extends React.Component {
+import firebase from 'firebase'
+
+class ListaClases extends React.Component {   
+    handleAddclase(value) {
+        let confirmar = confirm(`¿Estas seguro de querer añadir la clase ${value}?`);
+        //const miclase= this.refs.clase.value;
+        if (confirmar) {
+            //firebase.database.enableLogging(true);
+            const record = {                
+                clase: value                   
+            } 
+
+            const dbRef = firebase.database().ref('clases/' + this.props.uid);
+            const newClase = dbRef.push();
+            newClase.set(record);
+            //console.log(newClase)
+
+        } else {
+
+        }
+    }
     render(){
         let lista = {};
         for (let i = 1; i < 7 ; i++) {
@@ -12,8 +32,9 @@ class ListaClases extends React.Component {
         let clasesFiltradas = {};
         for (let i = 1; i < 7; i++){
             clasesFiltradas[i] = lista[i].map((item) => {
+                console.log(item)
                 return (
-                        <li key={item.id} className={item.estilo}>
+                        <li key={item.id} onClick={(value) => this.handleAddclase(item.actividad)} className={item.estilo}>
                             <div>Los <strong>{item.hoy}</strong> a las <strong>{item.horaclase}</strong></div>
                             <div className="duracion">{item.duracion}</div>
                             <div className="sala">{item.sala}</div>

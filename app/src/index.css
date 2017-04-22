@@ -29,3 +29,8 @@ li {
     background: deeppink;
     border-bottom: 3px solid lightpink;
 }
+
+.button-login, .button-logout {
+    text-align: center;
+    width: 50%;
+}

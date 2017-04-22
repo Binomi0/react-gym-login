@@ -7,13 +7,12 @@ class FormClases extends React.Component {
         this.state = {
             clase: '',
             clases: props.clases[1],
-            lista: props.listaOrdenada,
-
+            lista: props.listaOrdenada,            
         }
     }
     selectUpdate() {
-        let valor = this.refs.selectClases.value;
-        this.setState({ clase: valor });
+        let clase = this.refs.selectClases.value;
+        this.setState({ clase });
     }
 
     render() {
