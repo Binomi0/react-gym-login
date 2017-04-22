@@ -21,7 +21,7 @@ class AddClase extends React.Component {
             })
         })
         } else {
-            //console.log('No hay usuario logueado')
+            //console.log('No hay usuario logueado ni na de na')
         }
     }
 
